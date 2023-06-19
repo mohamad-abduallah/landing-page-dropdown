@@ -1,0 +1,34 @@
+@import "../abstracts";
+
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  column-gap: 10px;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+
+  .dropdown-item {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $medium-gray !important;
+
+  }
+}
+
+.dropdown-list {
+  right: 30px;
+  left: unset;
+}
+
+.show {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+
+}
